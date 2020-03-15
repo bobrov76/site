@@ -1,0 +1,11 @@
+<body class="text-center">
+    <form (submit)="userRegClick()">
+        <img class="mb-4" src="https://avatars.mds.yandex.net/get-pdb/1751508/6ab1874b-761a-4641-9586-8a242d22b828/s1200" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Please Reg</h1>
+        <input type="text" [(ngModel)]="username"  name="username" class="form-control" placeholder="Логин" required="" autofocus=""><br>
+        <input type="text" [(ngModel)]="role"  name="role" class="form-control" placeholder="Роль" required="" autofocus=""><br>
+        <input type="email" [(ngModel)]="email"  name="email" class="form-control" placeholder="E-mail" required=""><br>
+        <input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Password" required=""><br>  
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Reg</button>
+    </form>
+</body>

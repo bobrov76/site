@@ -1,0 +1,46 @@
+
+<!------ Include the above in your HEAD tag ---------->
+<br><br><br>  
+<div class="container">
+	<div class="row">
+<!-- Pen Title-->
+<div class="pen-title">
+</div>
+<div class="container">
+  <div class="card"></div>
+  <div class="card">
+    <h1 class="title">Login</h1>
+    <form (submit)="userLoginClick()">
+      <div class="input-container">
+        <input type="text" [(ngModel)]="username" #name="ngModel" id="Username" required="required" name="username" class="form-control" autofocus="">
+        <label for="Username">Username</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="password" [(ngModel)]="password"  id="Password" required="required" name="password" class="form-control">
+        <label for="Password">Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">        
+        <input type="submit" value="Login" class="btn btn-outline-primary">
+      </div>
+      <div class="footer"><a href="#">Forgot your password?</a></div>
+    </form>
+  </div>  
+</div>
+	</div>
+</div>
+
+
+
+
+<!-- TODO: This is for server side, there is another version for browser defaults -->
+<!-- <body>
+  <form (submit)="userLoginClick()" class="box">
+      <img class="mb-4" src="https://avatars.mds.yandex.net/get-pdb/1751508/6ab1874b-761a-4641-9586-8a242d22b828/s1200" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Please Reg</h1>
+      <input type="text" [(ngModel)]="username"  name="username" class="form-control" placeholder="Логин" required="" autofocus=""><br>
+      <input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Password" required=""><br>  
+      <input type="submit">
+  </form>
+</body> -->

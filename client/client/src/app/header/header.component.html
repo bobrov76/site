@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-sm site-header sticky-top navbar-light bg-light" id="nav_color">
+  <a class="navbar-brand" [routerLink]="['/']">By Bobrov</a>
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      
+    </ul>
+    <a *ngIf="authServise.isLogIn()" class="btn btn-outline-warning mr-3" [routerLink]="['/accaunt']">Кабинет пользователя</a>
+    <a *ngIf="authServise.isLogIn()" (click)="logoutUser()" class="btn btn-outline-warning mr-3" [routerLink]="['/']">Выйти</a>
+    <a *ngIf="!authServise.isLogIn()" class="btn btn-outline-primary mr-3" [routerLink]="['/auth']">Войти</a>
+    <a *ngIf="!authServise.isLogIn()" class="btn btn-outline-primary" [routerLink]="['/reg']">Регистрация</a>
+  </div>
+</nav>
